@@ -1,5 +1,21 @@
 # React
 
+### Tertiary Operator
+
+```
+render () {
+  return (
+    <div className="row">
+      { //Check if message failed
+        (this.state.message === 'failed')
+          ? <div> Something went wrong </div> 
+          : <div> Everything in the world is fine </div> 
+      }
+    </div>
+  );
+}
+```
+
 ### If Statement
 
 ```
