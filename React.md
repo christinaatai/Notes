@@ -16,6 +16,12 @@ render () {
 }
 ```
 
+**Tertiary Operator Template**
+
+`(expression or statement) ? (return this) : (return other)`
+
+How this is read: If the {expression or statement} is true, {return this}. Otherwise, {return other}.
+
 ### If Statement
 
 ```
