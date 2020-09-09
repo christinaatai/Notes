@@ -40,13 +40,13 @@ jobs:
 
 Here are some important details about why each part of the block exists and what each part does.
 
-jobs: is the base component of a workflow run
-build: is the identifier we're attaching to this job
-name: is the name of the job, this is displayed on GitHub when the workflow is running
-steps: the linear sequence of operations that make up a job
-uses: actions/checkout@v1 uses a community action called checkout to allow the workflow to access the contents of the repository
-uses: ./action-a provides the relative path the action we've created in the action-a directory of the repository
-with: is used to specify the input variables that will be available to your action in the runtime environment. In this case, the input variable is MY_NAME, and it is currently initialized to "Mona".
+`jobs`: is the base component of a workflow run
+`build`: is the identifier we're attaching to this job
+`name`: is the name of the job, this is displayed on GitHub when the workflow is running
+`steps`: the linear sequence of operations that make up a job
+`uses`: actions/checkout@v1 uses a community action called checkout to allow the workflow to access the contents of the repository
+`uses`: ./action-a provides the relative path the action we've created in the action-a directory of the repository
+`with`: is used to specify the input variables that will be available to your action in the runtime environment. In this case, the input variable is MY_NAME, and it is currently initialized to "Mona".
 
 
 ## Other notes
