@@ -58,7 +58,7 @@ No, you don't. Github Actions is its own CI in a way. You don't need Jenkins set
 https://github.com/marketplace?type=actions
 
 
-## References
+## Links & references
 - [Jasper's notes](https://www.notion.so/Github-Actions-101-9fa8e8e281084f33b57ac733517189b3)
 - [Features and actions](https://github.com/features/actions)
 - Review the [GitHub Actions documentation](https://help.github.com/articles/about-github-actions) on the GitHub Developer site.
