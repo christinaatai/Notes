@@ -2,12 +2,12 @@
 
 GitHub Actions are a flexible way to automate nearly every aspect of your team's software workflow. Here are just a few of the ways teams are using GitHub Actions:
 
-Automated testing (CI)
-Continuous delivery and deployment
-Responding to workflow triggers using issues, @ mentions, labels, and more
-Triggering code reviews
-Managing branches
-Triaging issues and pull requests
+* Automated testing (CI)
+* Continuous delivery and deployment
+* Responding to workflow triggers using issues, @ mentions, labels, and more
+* Triggering code reviews
+* Managing branches
+* Triaging issues and pull requests
 
 In a way, they are like customizable plugins. Similar to how there are plug-ins for Sketch, you can make your own plug-in for git/github.
 
