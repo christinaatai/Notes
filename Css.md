@@ -50,6 +50,22 @@ div > p {
 
 Meaning: All p in parent div will have a yellow background.
 
+## Classes
+
+If you want to style a block with two classnames, append the second classname onto the first classname.
+
+```
+[class^=pb_button_toolbar]{
+  &[class*=_primary].dark {
+    & > [class^=pb_button]::after {
+      @include horizontal_border($opacity: true, $dark: true)
+    }
+  }
+}
+```
+
+In the example above, `.dark` is appended onto the class `pb_button_toolbar_primary`
+
 ## Pseudo elements
 
 If a pseudo element isn't showing, try adding `display: block` as explained [here](https://stackoverflow.com/questions/30526801/absolute-after-pseudo-element-not-displaying-under-relative-parent).
