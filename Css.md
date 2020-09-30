@@ -5,6 +5,8 @@
 #### Optimizing cascading attributes
 In this example, border can be either light or dark and with or without opacity; therefore, there are four combinations of color and opacity. You can use `@if` statements inside a mixin to optimize the combinations.
 
+Also note, instead of having an `@if` statement inside of an `@if` statement, you can follow the format in the example.
+
 ```
 @mixin horizontal_border($opacity: false, $dark: false) {
   $border_color: $white;
@@ -26,6 +28,7 @@ In this example, border can be either light or dark and with or without opacity;
   display: block;
 }
 ```
+
 
 
 ## Child divs
