@@ -17,3 +17,12 @@ git diff >> my.diff
 ```
 
 Can save `git diff` changes onto a gist
+
+### Find rubocop errors or offenses
+
+
+`bin/rubocop` or `yarn lint` or `make test`
+
+`bin/rubocop -a` will check all of Nitro.
+
+`bin/rubocop -a /components/recruiting` will check a particular folder.
