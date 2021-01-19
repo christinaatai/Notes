@@ -65,3 +65,50 @@ https://github.com/marketplace?type=actions
 - Use existing actions from the [GitHub Marketplace](https://github.com/marketplace/actions).
 - Use existing actions from GitHub's [official actions community](https://github.com/actions).
 - Use actions created by others in [awesome-actions](https://github.com/sdras/awesome-actions).
+
+
+---
+
+
+# Github Actions Learning Session v2
+## Goal
+Provide the team with an overview of how to create a moderately complex Github action based on the Github JS API. 
+
+## Section 1 - Getting Started (again)
+- [ ] Go to your Playbook directory
+- [ ] Get the latest from `master`
+- [ ] Check out a Playbook branch of your own `gco -b name/github-actions-tutorial-v2`
+- [ ] [Visit the landing page](https://github.com/features/actions)
+- [ ] [Get started with a new action](https://docs.github.com/en/actions)
+- [ ] [Click the â€œQuick Startâ€ button](https://docs.github.com/en/actions/quickstart)
+
+[Events that trigger workflows](https://docs.github.com/en/actions/reference/events-that-trigger-workflows)
+
+## Section 2 - Start Coding
+- [ ] [Create your first workflow](https://docs.github.com/en/actions/quickstart#creating-your-first-workflow)
+- [ ] Navigate to your `/playbook/.github` directory
+- [ ] Under `workflows`, create a new yml named `hello.yml`
+- [ ] Copy the contents of `workflows/coverage.yml` to your new file
+- [ ] Change the `pull_request` branch to your branch
+- [ ] Add the `on: push` section
+	- [ ] Ensure the sub-key `branches` exists with your branch name
+- [ ] Remove the `Produce Test Coverage Data` section
+
+## Section 3 - Setup your Custom Action
+- [ ] Create a directory named `actions/hello`
+- [ ] Copy the contents of `actions/badge` to your new directory
+- [ ] Modify the `action.yml`  to fit the needs, leaving only these inputs
+	- [ ] github-repo
+	- [ ] github-token
+	- [ ] pull-number
+- [ ] Change the `runs` section to point to your new action JS file
+
+## Section 4 - Code your Action 
+Reference: [Creating a JavaScript action - GitHub Docs](https://docs.github.com/en/actions/creating-actions/creating-a-javascript-action)
+
+## Section 5 - Test your Action
+- [ ] Navigate to https://github.com/powerhome/playbook/settings/secrets/actions and ensure that `ACTIONS_STEP_DEBUG` is there and `true`
+- [ ] Push your new branch up to Github and then open PR against `master`
+- [ ] At the bottom of the page, look for your actionâ€™s status and click it
+- [ ] Watch your action run against your PR
+
