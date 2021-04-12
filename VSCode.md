@@ -1,9 +1,12 @@
 https://code.visualstudio.com/api/
 
-### Change title bar to different color to help visually differentiate projects
+### Workbench color customization
 
-1. Search Workspace Settings file
-2. Add this code
+Change title bar to different colors to help visually differentiate projects. Read more documentation [here](https://code.visualstudio.com/docs/getstarted/settings).
+
+1. On macOS - Code > Preferences > Settings
+2. Go to Workbench > Appearance > Color Customization > Edit in settings.json
+3. Add this code
 ```
 {
   "workbench.colorCustomizations": {
@@ -11,4 +14,4 @@ https://code.visualstudio.com/api/
   }
 }
 ```
-3. Change the hex color
+4. Change the hex color
