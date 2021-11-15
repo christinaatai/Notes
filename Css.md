@@ -1,4 +1,4 @@
-# CSS
+# SCSS
 
 ## Mixins
 
@@ -69,4 +69,16 @@ In the example above, `.dark` is appended onto the class `pb_button_toolbar_prim
 ## Pseudo elements
 
 If a pseudo element isn't showing, try adding `display: block` as explained [here](https://stackoverflow.com/questions/30526801/absolute-after-pseudo-element-not-displaying-under-relative-parent).
+
+## CSS Selectors
+| Example      | Description |
+| ----------- | ----------- |
+| `.name1.name2`      | All elements with `name1` AND `name 2`       |
+| `.name1 .name2`   | All elements with `name2` that has a parent with `name1`        |
+| `*`   | All elements        |
+| `div > p`   | Selects all p elements that has a `div` parent        |
+| `div + p`  | All `p` elements right after `div` element        |
+| `p ~ div`   | All `div` emements that come before any `p` element        |
+
+
 
