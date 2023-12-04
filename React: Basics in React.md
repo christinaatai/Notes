@@ -78,4 +78,76 @@ class App extends Component {
 export default App;
 ```
 
+## ES6 Object Initalizer
+
+You can use a shorthand property syntax to intialize your objects more concisely.
+
+```
+const name = 'Robin';
+const user = {
+  name: name,
+};
+```
+
+When the property name in your object is the same as your variable name, you can do the following:
+
+```
+const name = 'Robin';
+const user = {
+  name,
+};
+```
+
+In your application, you can do the same. The list variable name and the state property name share the same name.
+
+```
+// ES5
+this.state = {
+  list: list,
+};
+
+// ES6
+this.state = {
+  list,
+};
+```
+
+Can intialize methods in an object more concisely...
+
+```
+// ES5
+var userService = {
+  getUserName: function (user) {
+    return user.firstname + ' ' + user.lastname;
+  },
+};
+
+// ES6
+const userService = {
+  getUserName(user) {
+    return user.firstname + ' ' + user.lastname;
+  },
+};
+```
+
+Can also use computed property names.
+
+```
+// ES5
+var user = {
+  name: 'Robin',
+};
+
+// ES6
+const key = 'name';
+const user = {
+  [key]: 'Robin',
+};
+```
+
+
+
+
+
+
 
