@@ -1,5 +1,17 @@
 # Git
 
+### Basics
+| Command    | Function |
+| -------- | ------- |
+| `cd`  | Change directory to home   |
+| `cd ~` | Change to home directory    |
+| `cd ..` | Change to parent directory    |
+| `cd -` | Change to previous directory    |
+| `ls` | List directory contents    |
+| `code .` | Open in VSCode    |
+| `npm start` |     |
+| `npm run build` |     |
+
 ### Git pull single file from Remote
 
 ```
